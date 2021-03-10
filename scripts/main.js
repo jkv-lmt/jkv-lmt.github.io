@@ -33,8 +33,8 @@ if (adBlockEnabled == false) {
 
         <p> Etiam tristique justo sed risus volutpat porta vel in tortor. 
         Morbi ante felis, hendrerit in erat vitae, condimentum scelerisque enim. Vivamus vel laoreet tellus. Nam aliquet imperdiet lorem.</p>
-        <a id='accept' href="#">Accept</a>
-        <a id='decline' href="#">Decline</a>
+        <a id='accept' href="#" onclick="ga('send', 'event', 'blkWindowBtn', 'click', 'testAccept', 1);">Accept</a>
+        <a id='decline' href="#" onclick="ga('send', 'event', 'blkWindowBtn', 'click', 'testDecline', 0);">Decline</a>
     `;
 
     document.body.appendChild(msgContent);
